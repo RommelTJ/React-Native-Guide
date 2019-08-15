@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={{padding: 30}} >
       <View>
-        <TextInput placeholder="Course Goal" />
+        <TextInput placeholder="Course Goal" style={{borderBottomColor: "black", borderBottomWidth: 1}} />
         <Button title="ADD" />
       </View>
       <View>
