@@ -5,10 +5,18 @@ export default function App() {
 
   const [enteredGoal, setEnteredGoal] = useState('');
 
+  function goalInputHandler(enteredText) {
+    setEnteredGoal(enteredText);
+  }
+
   return (
     <View style={styles.screen} >
       <View style={styles.inputContainer}>
-        <TextInput placeholder="Course Goal" style={styles.input} />
+        <TextInput
+          placeholder="Course Goal"
+          style={styles.input}
+          onChangeText={goalInputHandler}
+        />
         <Button title="ADD" />
       </View>
       <View>
