@@ -16,6 +16,7 @@ export default function App() {
           placeholder="Course Goal"
           style={styles.input}
           onChangeText={goalInputHandler}
+          value={enteredGoal}
         />
         <Button title="ADD" />
       </View>
