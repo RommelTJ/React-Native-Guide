@@ -6,6 +6,7 @@ import GoalInput from "./components/GoalInput";
 export default function App() {
 
   const [courseGoals, setCourseGoals] = useState([]);
+  const [isAddMode, setIsAddMode] = useState(false);
 
   const addGoalHandler = (goalTitle) => {
     // uid should be typically called "key"
