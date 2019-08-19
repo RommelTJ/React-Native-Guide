@@ -21,8 +21,8 @@ export default function App() {
 
   return (
     <View style={styles.screen} >
-      <Button title="Add New Goal" />
-      <GoalInput onAddGoal={addGoalHandler}/>
+      <Button title="Add New Goal" onPress={() => setIsAddMode(true)} />
+      <GoalInput onAddGoal={addGoalHandler} visible={isAddMode} />
       <FlatList
         data={courseGoals}
         renderItem={
