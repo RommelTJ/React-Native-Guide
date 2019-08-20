@@ -11,6 +11,7 @@ export default function App() {
   const addGoalHandler = (goalTitle) => {
     // uid should be typically called "key"
     setCourseGoals([...courseGoals, { uid: Math.random().toString(), value: goalTitle}]);
+    setIsAddMode(false);
   };
 
   const onDeleteGoalHandler = (goalId) => {
